@@ -1,18 +1,19 @@
 package Acuario
 
-class PecesAcuario {
-
+abstract class Pez(val color: String, val nombre: String) {
+    abstract fun imprimir()
 }
 
-abstract class Pez(open var color: String, open var nombre: String) {
-    fun imprimir() {}
-        
+class Tiburon(color: String) : Pez(color) {
+    override fun imprimir() {
+        println("El tiburón es de color: ${color}")
+    }
 }
 
-class tiburon(override var color: String, var nombre: String) {
-    
-}
-
-class PezPayaso {
-
+class PezPayaso : Pez() {
+    override val color: String = "dorado"
+    override val nombre: String = "nemo"
+    override fun imprimir() {
+        println("El pez payaso es de color: ${color}")
+    }
 }

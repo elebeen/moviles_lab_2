@@ -31,6 +31,15 @@ fun construirAcuario() {
     miTorre.imprimirTamano()
 }
 
+fun crearPeces() {
+    val tiburon = Tiburon()
+    tiburon.imprimir()
+    val pezpayaso = PezPayaso()
+    pezpayaso.imprimir()
+
+}
+
 fun main() {
     construirAcuario()
+    crearPeces()
 }
