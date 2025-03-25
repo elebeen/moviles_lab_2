@@ -34,8 +34,10 @@ fun construirAcuario() {
 fun crearPeces() {
     val tiburon = Tiburon("gris", "dino")
     tiburon.imprimir()
+    tiburon.comer()
     val pezpayaso = PezPayaso("dorado", "nemo")
     pezpayaso.imprimir()
+    pezpayaso.comer()
 
 }
 
