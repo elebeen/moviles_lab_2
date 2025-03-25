@@ -25,16 +25,16 @@ fun construirAcuario() {
     //val acuario8 = Acuario(largo = 25, ancho = 25, alto = 40)
     //acuario8.imprimirTamano()
 
-    val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
-    miAcuario.imprimirTamano()
-    val miTorre = Tanquetorre(diametro = 25, alto = 40)
-    miTorre.imprimirTamano()
+    //val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
+    //miAcuario.imprimirTamano()
+    //val miTorre = Tanquetorre(diametro = 25, alto = 40)
+    //miTorre.imprimirTamano()
 }
 
 fun crearPeces() {
-    val tiburon = Tiburon()
+    val tiburon = Tiburon("gris", "dino")
     tiburon.imprimir()
-    val pezpayaso = PezPayaso()
+    val pezpayaso = PezPayaso("dorado", "nemo")
     pezpayaso.imprimir()
 
 }

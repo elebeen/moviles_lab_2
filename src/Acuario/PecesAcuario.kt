@@ -4,16 +4,14 @@ abstract class Pez(val color: String, val nombre: String) {
     abstract fun imprimir()
 }
 
-class Tiburon(color: String) : Pez(color) {
+class Tiburon(color: String, nombre: String) : Pez(color, nombre) {
     override fun imprimir() {
-        println("El tiburón es de color: ${color}")
+        println("El tiburón se llama $nombre es de color: ${color}")
     }
 }
 
-class PezPayaso : Pez() {
-    override val color: String = "dorado"
-    override val nombre: String = "nemo"
+class PezPayaso(color: String, nombre: String) : Pez(color, nombre) {
     override fun imprimir() {
-        println("El pez payaso es de color: ${color}")
+        println("El pez payaso se llama $nombre es de color: ${color}")
     }
 }
